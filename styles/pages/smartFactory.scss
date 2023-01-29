@@ -1,0 +1,70 @@
+.smartFactory {
+  @include header;
+  /* 공통 (PC 기준) ------------------------------------------ */
+  section {
+    // display: grid; align-items: center; justify-content: center;
+    width: 100%;
+    @include pageTitle;
+    &:nth-of-type(1) {
+      .title {color: var(--color-1); font-size: var(--font-8);}
+    }
+    &:nth-of-type(3) {.contents{display: grid; gap:40px;}}
+    .contents {
+      display: flex; justify-content: space-around; align-items: center; width: 100%;
+      img{padding: 10px;}
+      a {padding: 40px; background-color: var(--color-4); border-radius: 10px; width: 48%; text-align: center; font-size: var(--font-6);}
+      .timeline-m {display: none;}
+    }
+    &:nth-of-type(4){.contents{.smartFactory-btn{&:hover{opacity: .5;}}}}
+    .gov {display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; width: 90%; align-items: center;}
+    /* PC ------------------------------------------ */
+    @include desktop {
+      .contents{img{
+        &:nth-of-type(1){padding: 30px;}
+      }}
+    }
+    /* Tablet --------------------------------------- */
+    @include tablet {
+      &:nth-of-type(1) {
+        .title {font-size: var(--font-6);}
+      }
+      .subtitle {font-size: var(--font-4);}
+      &:nth-of-type(2) {
+        .contents{display: flex; gap:10px;
+          img{max-width: 50%;}
+        }
+      }
+      .contents {
+        a{padding: 24px; font-size: var(--font-3);}
+        .timeline-m {display: none;}
+      }
+      .gov {width:100%; gap:16px; a{width:20%;}}
+    }
+    /* Mobile --------------------------------------- */
+    @include mobile {
+      &:nth-of-type(1) {
+        // height: 80px;
+        .title {font-size: var(--font-3);}
+      }
+      .subtitle {font-size: var(--font-3);}
+      .contents {
+        display: grid; gap: 16px;
+        a{padding: 20px 40px; width: 100%; font-size: var(--font-2);}
+        .timeline-w {display: none;}
+        .timeline-m {display: block;}
+      }
+      .gov {width:100%; gap:12px; a{width:30%;}}
+    }
+    /* min Mobile ----------------------------------- */
+    @include min-mobile{
+      &:nth-of-type(1){
+        .title{font-size:var(--font-2);}
+      }
+      .contents{
+        a{padding:16px;font-size:var(--font-1);}
+        img{padding:0px;}
+      }
+      .gov{gap:6px;}
+    }
+  }
+}

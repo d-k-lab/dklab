@@ -1,0 +1,91 @@
+.index {
+  header{.gnb{nav{.gnb-w{li{.snb{display: none;}}}}}}
+  /* 공통 (PC 기준) ------------------------------------------ */
+  main {
+    padding: 0 80px;
+    width: 100%; height: inherit;
+    display: grid; place-items: center;
+    &>div {
+      display: grid;
+      &:nth-of-type(2) {display: grid; height: fit-content;}
+      p {
+        &:nth-of-type(1) {line-height: 120%; margin-bottom: 24px;}
+        &:nth-of-type(2) {color: var(--color-5); max-width: 100%;}
+      }
+    }
+    .smartFactory-btn {
+      padding: 16px 40px; margin-top: 50px; font-size: var(--font-3);
+      width: fit-content; height: fit-content; text-align: center;
+      background: var(--color-7); color: var(--color-1); border-radius: 16px;
+      &:hover {opacity: .8;}
+    }
+    .img-m, .img-w {
+      display: grid; place-items: center; position: relative; width: 100%;
+      img {width: inherit; height: fit-content;}
+      .banner {
+        position: absolute; bottom: 0; right: 0;
+        width: fit-content; height: 200px; width: 200px;
+      }
+      .contact {
+        position: absolute; bottom: -70px; right: 0; font-size: var(--font-3); text-align: right;
+      }
+    }
+    
+    /* PC ------------------------------------------ */
+    @include desktop {
+      display: flex; width: 100%;
+      &>div {
+        &:nth-of-type(2) {width: 50%; margin-top: 20px;
+          img {position: absolute;}
+        }
+        p {
+          &:nth-of-type(1) {font-size: 3.5rem;}
+          &:nth-of-type(2) {font-size: var(--font-4);}
+        }
+      }
+      .img-m {display: none;}
+    }
+
+    /* Tablet --------------------------------------- */
+    @include tablet {
+      padding:20px;
+      &>div {
+        &:nth-of-type(1) {width: 80%;} 
+        &:nth-of-type(2) {width: 100%; padding: 0 40px; margin-top: -80px;}
+        p {
+          &:nth-of-type(1) {font-size: 3.25rem;}
+          &:nth-of-type(2) {font-size: var(--font-5);}
+        }
+      }
+      .smartFactory-btn {
+        padding: 20px 40px; font-size: var(--font-5); width: auto;
+      }
+      .img-m {.banner {top: 70%; right: -10%;}}
+      .img-w {display: none;}
+    }
+
+    /* Mobile --------------------------------------- */
+    @include mobile{
+      padding:0;
+      &>div {
+        &:nth-of-type(1) {width: 90%; display: grid; place-items: center;}
+        &:nth-of-type(2) {padding: 0 24px;}
+        p {
+          &:nth-of-type(1) {font-size: 2rem; margin-bottom: 8px;}
+          &:nth-of-type(2) {font-size: var(--font-2);}
+        }
+      }
+      .smartFactory-btn {
+        padding: 14px; margin-top: 24px; font-size: var(--font-2); width: auto;
+      }
+      .img-m {.banner {top: 70%; right: -4%; width: 150px; height: 150px;}}
+      .img-w {display: none;}
+    }
+
+    /* min Mobile ----------------------------------- */
+    @include min-mobile{
+      &>div{&:nth-of-type(2){margin-top:auto;}}
+      .img-m{.banner{top:50%;}}
+    }
+  }
+}

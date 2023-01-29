@@ -1,0 +1,52 @@
+.smartProduct, .SmartStudio {
+  /* 공통 (PC 기준) ------------------------------------------ */
+	width: 100%; display: grid; gap: 30px;
+	@include mobile {gap: 10px;}
+	section {
+		@include pageTitle;
+		&:nth-of-type(2){
+			div{display:flex;gap:10%;
+				img{width:100%;height:100%;
+					&:nth-of-type(1){padding-top:60px;}
+				}
+			}
+		}
+		.title{font-size:var(--font-4);color:var(--color-1);}
+		.discription{font-size:var(--font-3);color:var(--color-1);max-width: 780px;font-weight: 400;margin-top:8px;}
+    .subtitle {font-size: var(--font-6); color: var(--color-7); font-weight: bold; margin: 30px 0;}
+
+		/* PC ------------------------------------------ */
+		@include desktop {
+			&:nth-of-type(2){div{padding:0 140px;padding-left: 16%;}}
+		}
+		/* Tablet --------------------------------------- */
+		@include tablet {
+			&:nth-of-type(2){div{padding:0 2%;padding-left: 4%;}}
+			.subtitle {font-size: var(--font-4);}
+		}
+		/* Mobile --------------------------------------- */
+		@include mobile {
+			&:nth-of-type(2){margin-top: 20px;
+				div{flex-wrap: wrap; padding:0;
+					img{
+						&:nth-of-type(1){padding-top:0px;}
+						&:nth-of-type(2){margin-top: 40px; margin-left: 40px; display: none;}
+			}}}
+			.subtitle {font-size: var(--font-3);}
+		}
+		/* min Mobile ----------------------------------- */
+		@include min-mobile{
+			&:nth-of-type(1){
+				div{
+					&:nth-of-type(2){
+						.discription{bottom: -120px;}
+					}
+				}
+			}
+			&:nth-of-type(2){
+				margin-top: 140px;
+				div{padding:0;}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+/* globals */
+@import 'globals/_reset.scss';
+@import 'globals/_color.scss';
+@import 'globals/_font.scss';
+@import 'globals/_utils.scss';
+@import 'globals/_pageTitle.scss';
+
+/* components */
+@import 'components/header.scss';
+@import 'components/footer.scss';
+
+/* pages */
+@import 'pages/index.scss';
+@import 'pages/company.scss';
+@import 'pages/smartFactory.scss';
+@import 'pages/vendor.scss';
+@import 'pages/solutionIfis.scss';

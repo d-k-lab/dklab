@@ -1,0 +1,71 @@
+.company {
+	@include header;
+  /* 공통 (PC 기준) ------------------------------------------ */
+	section{
+		@include pageTitle;
+		&:nth-of-type(1){color:var(--color-1);img{width:250px;}}
+		&:nth-of-type(3){div{display: flex; padding:20px 40px;
+			img{margin:40px;}
+			p{
+				display: grid; align-items: center;
+				background: var(--color-3);
+				padding: 32px;
+				border-radius: 10px;
+				font-size: var(--font-4);
+			}
+		}}
+		/* PC ------------------------------------------ */
+		&:nth-of-type(4){display: flex; justify-content: center;
+			div{display: flex;justify-content: center;width: 100%;gap: 80px;
+				ul{
+					display: grid; gap:16px; align-items: center; justify-content:space-between;
+					background: var(--color-3); padding: 40px 60px; border-radius: 10px; font-size: var(--font-4);
+				}
+			img{padding:40px; padding:40px;}
+			}
+		}
+		&:nth-of-type(5){div{display: flex;gap:20px;width:100%;justify-content: center;
+			img{padding:0 40px;}
+		}}
+		@include desktop {
+			&:nth-of-type(2){div{padding:0 100px;}}
+			.business-m {display: none;}
+		}
+		/* Tablet --------------------------------------- */
+		@include tablet {
+			&:nth-of-type(1){img{width:120px;}}
+			&:nth-of-type(3){div{padding:0; img{margin:20px;} p{font-size: var(--font-2);}}}
+			&:nth-of-type(4){div{display: grid; gap:0;place-items: center;
+				ul{gap:8px; padding:30px 120px; font-size: var(--font-3);background: var(--color-2);}
+			}}
+			&:nth-of-type(5){div{display: grid;
+				justify-content: center; place-items: center;
+				gap: 20px;width: 100%;
+				img{padding:0; &:nth-of-type(1){padding: 0 60px;order: 1;}}
+			}
+			}
+			.business-m {display: none;}
+		}
+		/* Mobile --------------------------------------- */
+		@include mobile {
+			&:nth-of-type(1){div{
+				&:nth-of-type(1){width:100px;}
+				&:nth-of-type(2){.discription{bottom:-100px;}}
+			}}
+			&:nth-of-type(3){div{display: none;}}
+			&:nth-of-type(4){div{display: grid; gap:10px;
+				ul{gap:8px; font-size: var(--font-1); padding: 16px;}
+				img{padding:10px;}
+			}}
+			&:nth-of-type(5){div{display: grid; gap:10px;
+				img{padding:0;
+					&:nth-of-type(1){order:1;}
+				}
+			}}
+			.business-w {display: none;}
+			.business-m {display: flex;padding:20px;width:100%;}
+		}
+		/* min Mobile ----------------------------------- */
+		@include min-mobile{}
+	}
+}

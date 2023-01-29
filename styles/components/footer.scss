@@ -1,0 +1,6 @@
+footer {
+  width: 100%; display: grid; place-items: center; color: var(--color-5);
+  @include desktop {font-size: var(--font-3); margin: 40px 0;}
+  @include tablet  {font-size: var(--font-3); margin: 40px 0;}
+  @include mobile  {font-size: var(--font-2); margin: 16px 0;}
+}
