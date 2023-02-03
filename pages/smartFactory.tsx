@@ -36,7 +36,7 @@ export default function SmartFactory() {
       <Header><h1>스마트팩토리</h1></Header>
       <main>
           <section>
-            <p className='title'>2022년 스마트공방 기술보급 사업</p>
+            <p className='title'>2023년 스마트공방 기술보급 사업</p>
           </section>
           <section>
             <p className='subtitle'>사업지원</p>
@@ -56,12 +56,12 @@ export default function SmartFactory() {
           <section>
             <p className='subtitle'>구축실적 및 참고자료</p>
             <div className='contents'>
-              <Link href='#' className='smartFactory-btn'>2021년 구축 실적 보러가기</Link>
-              <Link href='#' className='smartFactory-btn'>2022년 스마트공방 기술보급 사업 모집 공고</Link>
+              <Link href='/vendor/smartStudio' className='smartFactory-btn'>2022년 구축 실적 보러가기</Link>
+              <Link href='#' className='smartFactory-btn'>2023년 스마트공방 기술보급 사업 모집 공고</Link>
             </div>
           </section>
           <section>
-            <p className='subtitle'>유관기관</p>
+            <p className='subtitle'>디케이랩 유관기관</p>
             <div className='gov'>
               <Link href='#'><Image src={gov_1} alt="gov Logo"/></Link>
               <Link href='#'><Image src={gov_2} alt="gov Logo"/></Link>

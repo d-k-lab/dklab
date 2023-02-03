@@ -38,7 +38,7 @@ export default function Home() {
               <p className='contact'>
                 문의<br />
                 070-4354-0782<br />
-                contact@dklab.kr
+                mjsk@dklab.kr
               </p>
             </div>
         </main>
