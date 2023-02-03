@@ -41,16 +41,16 @@ export default function SmartFactory() {
           <section>
             <p className='subtitle'>사업지원</p>
             <div className='contents'>
-              <Image src={smartFactory_1_1} alt="사업지원"/>
-              <Image src={smartFactory_1_2} alt="사업지원"/>
+              <Image src={smartFactory_2_1} className='timeline-w' alt="지원내용"/>
+              <Image src={smartFactory_2_1_1} className='timeline-m' alt="지원내용"/>
+              <Image src={smartFactory_2_2} className='timeline-w' alt="지원내용"/>
             </div>
           </section>
           <section>
             <p className='subtitle'>지원내용</p>
             <div className='contents'>
-              <Image src={smartFactory_2_1} className='timeline-w' alt="지원내용"/>
-              <Image src={smartFactory_2_1_1} className='timeline-m' alt="지원내용"/>
-              <Image src={smartFactory_2_2} className='timeline-w' alt="지원내용"/>
+              <Image src={smartFactory_1_1} alt="사업지원"/>
+              <Image src={smartFactory_1_2} alt="사업지원"/>
             </div>
           </section>
           <section>
