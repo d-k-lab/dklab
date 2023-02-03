@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>DKLAB</title>
-        <link rel="icon" href="/icon/dklab-favicon.ico" />
+        <link rel="icon" href="/image/icon/dklab-favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>
