@@ -51,7 +51,7 @@ export default function Header({children}:any) {
             })}
           </ul>
         </nav>
-        <Link href='/'><Image src={i_kakao} alt="kakao" /></Link>
+        <Link href='http://pf.kakao.com/_dvMxnb/chat' target='_blank'><Image src={i_kakao} title="카카오톡 채널 1:1 채팅 버튼" alt="카카오톡 채널 1:1 채팅 버튼" /></Link>
       </div>
     </header>
   )
