@@ -54,17 +54,17 @@ header {
     margin: 20px 0;
     .gnb {
       width: initial;
-      .gnb-name{a{display: none;}}
+      .gnb-name{.kakao{display: none;}}
       .modal {
         display: grid;
-        &>a {margin-top: 60px;}
+        &>a {margin-top: 8px;}
         li{a{display: grid;gap:16px;
           .snb{
           display: grid;gap: 14px;font-size: 1.2rem;color: var(--color-5);
           h1{display: none;}
         }}}
       }
-      &>a {display: none;}
+      .kakao {display: none;}
       .gnb-m, .gnb-btn {display: flex; padding: 12px;
       }
       .gnb-w {display: none;}

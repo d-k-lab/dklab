@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import logo_dklabLogoBlack from "@/public/image/logo/dklab-logo-black.svg"
+import i_blog from "@/public/image/icon/blog.png"
 import i_kakao from "@/public/image/icon/kakao.png"
 import i_close from "@/public/image/icon/close.svg"
 import i_gnb from "@/public/image/icon/gnb.svg"
@@ -14,13 +15,14 @@ export default function Header({children}:any) {
     setIsActive(current => !current);
   };
   const menuData=[
+    {id: '4', ko: '회사소개', en: 'company', path: '/company'},
     {id: '1', ko: '스마트팩토리', en: 'smartFactory', path: '/smartFactory'},
     {id: '2', ko: '솔루션', en: 'solutionIfis', path: '/solutionIfis'},
     {id: '3', ko: '구축실적', en: 'smartFactory', path: '/vendor/smartStudio',
                   snb1: '스마트 공방', snb1path: '/vendor/smartStudio',
                   snb2: '스마트 공장', snb2path: '/vendor/smartFactory',
                   },
-    {id: '4', ko: '회사소개', en: 'company', path: '/company'},
+    {id: '5', ko: '블로그', en: 'blog', path: '/blog'},
   ]
   const router = useRouter();
   return (
@@ -51,7 +53,7 @@ export default function Header({children}:any) {
             })}
           </ul>
         </nav>
-        <Link href='http://pf.kakao.com/_dvMxnb/chat' target='_blank'><Image src={i_kakao} title="카카오톡 채널 1:1 채팅 버튼" alt="카카오톡 채널 1:1 채팅 버튼" /></Link>
+        <Link href='http://pf.kakao.com/_dvMxnb/chat' target='_blank' className='kakao'><Image src={i_kakao} title='카카오톡 채널 1:1 채팅 버튼' alt='카카오톡 채널 1:1 채팅 버튼' /></Link>
       </div>
     </header>
   )
