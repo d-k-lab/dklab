@@ -1,0 +1,8 @@
+.blog {
+  @include header;
+  section {
+    @include pageTitle;
+    color:var(--color-1);
+
+  }
+}

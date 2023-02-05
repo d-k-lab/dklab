@@ -8,10 +8,12 @@ export default function Blog() {
       <Head>
         <title>DKLAB - 디케이랩</title>
       </Head>
-      <div className='index'>
+      <div className='blog'>
         <Header />
         <main>
-          blog
+          <section>
+            <p className='title'>DKLAB BLOG</p>
+          </section>
         </main>
         <Footer />
       </div>
