@@ -8,7 +8,7 @@
 			img{margin:40px;}
 			p{
 				display: grid; align-items: center;
-				background: var(--color-3);
+				background: var(--color-2);
 				padding: 32px;
 				border-radius: 10px;
 				font-size: var(--font-4);
@@ -19,7 +19,7 @@
 			div{display: flex;justify-content: center;width: 100%;gap: 80px;
 				ul{
 					display: grid; gap:16px; align-items: center; justify-content:space-between;
-					background: var(--color-3); padding: 40px 60px; border-radius: 10px; font-size: var(--font-4);
+					background: var(--color-2); padding: 40px 60px; border-radius: 10px; font-size: var(--font-4);
 				}
 			img{padding:40px; padding:40px;}
 			}

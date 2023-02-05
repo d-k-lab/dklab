@@ -9,7 +9,7 @@ import business_m from '@/public/image/company/business-m.png';
 import ceo from '@/public/image/company/ceo.png';
 import patent from '@/public/image/company/patent.png';
 
-import company from '@/public/image/company/company.png';
+import company from '@/public/image/company/info.png';
 import building from '@/public/image/company/building.png';
 import Head from 'next/head';
 
