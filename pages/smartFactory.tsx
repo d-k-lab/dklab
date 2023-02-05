@@ -4,6 +4,15 @@ import Image from 'next/image';
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
+import dklab_samrtFactory_1 from '@/public/image/smartFactory/dklab_samrtFactory_1.png';
+import dklab_samrtFactory_2 from '@/public/image/smartFactory/dklab_samrtFactory_2.png';
+import dklab_samrtFactory_3 from '@/public/image/smartFactory/dklab_samrtFactory_3.png';
+import company_samrtFactory_1 from '@/public/image/smartFactory/company_samrtFactory_1.png';
+import company_samrtFactory_2 from '@/public/image/smartFactory/company_samrtFactory_2.png';
+import company_samrtFactory_3 from '@/public/image/smartFactory/company_samrtFactory_3.png';
+import company_samrtFactory_4 from '@/public/image/smartFactory/company_samrtFactory_4.png';
+import company_samrtFactory_5 from '@/public/image/smartFactory/company_samrtFactory_5.png';
+import company_samrtFactory_6 from '@/public/image/smartFactory/company_samrtFactory_6.png';
 import smartFactory_1_1 from '@/public/image/smartFactory/smartFactory-1-1.png';
 import smartFactory_1_2 from '@/public/image/smartFactory/smartFactory-1-2.png';
 import smartFactory_2_1 from '@/public/image/smartFactory/smartFactory-2-1.png';
@@ -36,27 +45,86 @@ export default function SmartFactory() {
       <Header><h1>스마트팩토리</h1></Header>
       <main>
           <section>
-            <p className='title'>2023년 스마트공방 기술보급 사업</p>
+            <p className='title'>2023년 <span>스마트공방</span> 기술보급 사업</p>
           </section>
           <section>
-            <p className='subtitle'>사업지원</p>
+            <p className='subtitle'><u>작업자의 행복을 위해</u> 스마트공방 구축 시 이점</p>
             <div className='contents'>
-              <Image src={smartFactory_2_1} className='timeline-w' alt="지원내용"/>
-              <Image src={smartFactory_2_1_1} className='timeline-m' alt="지원내용"/>
-              <Image src={smartFactory_2_2} className='timeline-w' alt="지원내용"/>
+              <ul>
+                <li>
+                  <p>기업의 원활한 공정과 제품 관련 데이터 관리</p>
+                  <p>작업자의 생산성과 삶과 업무의 행복 향상</p>
+                  <Image src={dklab_samrtFactory_1} alt='작업자 이미지'></Image>
+                </li>
+                <li>
+                  <p>작업 외의 모든 데이터를 디케이랩이 관리</p>
+                  <p>작업자는 작업 디테일을 살리는 것에 집중 가능</p>
+                  <Image src={dklab_samrtFactory_2} alt='작업자 이미지'></Image>
+                </li>
+                <li>
+                  <p>디케이랩은 기업의 정확한 데이터를 관리</p>
+                  <p>기업의 원가 절감과 Co2 탄소 절감 가능</p>
+                  <Image src={dklab_samrtFactory_3} alt='ESG 이미지'></Image>
+                </li>
+              </ul>
             </div>
           </section>
           <section>
-            <p className='subtitle'>지원내용</p>
-            <div className='contents'>
-              <Image src={smartFactory_1_1} alt="사업지원"/>
-              <Image src={smartFactory_1_2} alt="사업지원"/>
+            <p className='subtitle'><u>스마트공방</u> 정부지원사업 공고 내용</p>
+            <div className='contents business'>
+              <Image src={smartFactory_1_1} alt="스마트공방 정부지원사업 공고 내용"/>
+              <Image src={smartFactory_1_2} alt="스마트공방 정부지원사업 공고 내용"/>
+            </div>
+          </section>
+          <section>
+            <p className='subtitle'>기업의 <u>스마트 팩토리를 위해</u> 한걸음 다가가는 방법</p>
+            <div className='contents step'>
+              <ul>
+                <li>
+                  <p>작업자가 손으로 하나씩 체크하는 재고 수동 체크</p>
+                  <p>디지털화로 입/출고 재고 자동 체크</p>
+                  <Image src={company_samrtFactory_1} alt='스마트 팩토리 이미지'></Image>
+                </li>
+                <li>
+                  <p>잃어버리거나 숫자를 알아볼 수 없는 종이 장부</p>
+                  <p>디지털화로 정확한 숫자 기록 관리</p>
+                  <Image src={company_samrtFactory_2} alt='스마트 팩토리 이미지'></Image>
+                </li>
+                <li>
+                  <p>작업자가 기입하는 재고 엑셀 관리</p>
+                  <p>재고, 불량, 교체시기, 제어, 공정 등 모든 데이터 관리</p>
+                  <Image src={company_samrtFactory_3} alt='스마트 팩토리 이미지'></Image>
+                </li>
+                <li>
+                  <p>작업자의 감각으로 의존하는 제품 불량 선별</p>
+                  <p>데이터 기록을 통해 불량 선별</p>
+                  <Image src={company_samrtFactory_4} alt='스마트 팩토리 이미지'></Image>
+                </li>
+                <li>
+                  <p>작업자의 감각으로 의존하는 기계의 모든 데이터</p>
+                  <p>진동, 회전, 동작, 온도, 습도, 전압 등 데이터 관리</p>
+                  <Image src={company_samrtFactory_5} alt='스마트 팩토리 이미지'></Image>
+                </li>
+                <li>
+                  <p>사람의 감각으로 의존하는 제품 교체 시기</p>
+                  <p>데이터 기록을 통해 제품 교체 시기 측정</p>
+                  <Image src={company_samrtFactory_6} alt='스마트 팩토리 이미지'></Image>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <p className='subtitle'><u>스마트공방</u> 지원 기간 및 절차</p>
+            <div className='contents timeline'>
+              <Image src={smartFactory_2_1} className='timeline-w' alt="지원 기간 및 절차"/>
+              <Image src={smartFactory_2_1_1} className='timeline-m' alt="지원 기간 및 절차"/>
+              <Image src={smartFactory_2_2} className='timeline-w' alt="지원 기간 및 절차"/>
             </div>
           </section>
           <section>
             <p className='subtitle'>구축실적 및 참고자료</p>
             <div className='contents'>
-              <Link href='/vendor/smartStudio' className='smartFactory-btn'>2022년 구축 실적 보러가기</Link>
+              <Link href='/vendor/smartStudio' className='smartFactory-btn dklab-smartFactory-btn'>디케이랩 스마트공방 구축 실적 보기</Link>
               <Link href='#' className='smartFactory-btn'>2023년 스마트공방 기술보급 사업 모집 공고</Link>
             </div>
           </section>
