@@ -33,6 +33,10 @@ import gov_12 from '@/public/image/smartFactory/gov-12.png';
 import gov_13 from '@/public/image/smartFactory/gov-13.png';
 import gov_14 from '@/public/image/smartFactory/gov-14.png';
 import gov_15 from '@/public/image/smartFactory/gov-15.png';
+import gov_16 from '@/public/image/smartFactory/gov-16.png';
+import gov_17 from '@/public/image/smartFactory/gov-17.png';
+import gov_18 from '@/public/image/smartFactory/gov-18.png';
+import gov_19 from '@/public/image/smartFactory/gov-19.png';
 import Head from "next/head";
 
 export default function SmartFactory() {
@@ -146,6 +150,10 @@ export default function SmartFactory() {
               <Link href='#'><Image src={gov_13} alt="gov Logo"/></Link>
               <Link href='#'><Image src={gov_14} alt="gov Logo"/></Link>
               <Link href='#'><Image src={gov_15} alt="gov Logo"/></Link>
+              <Link href='#'><Image src={gov_16} alt="gov Logo"/></Link>
+              <Link href='#'><Image src={gov_17} alt="gov Logo"/></Link>
+              <Link href='https://www.skcc.co.kr/'><Image src={gov_18} alt="gov Logo"/></Link>
+              <Link href='https://www.innobiz.net/'><Image src={gov_19} alt="gov Logo"/></Link>
             </div>
           </section>
       </main>
