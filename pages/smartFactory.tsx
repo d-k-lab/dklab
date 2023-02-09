@@ -135,25 +135,25 @@ export default function SmartFactory() {
           <section>
             <p className='subtitle'>디케이랩 유관기관</p>
             <div className='gov'>
-              <Link href='#'><Image src={gov_1} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_2} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_3} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_4} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_5} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_6} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_7} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_8} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_9} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_10} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_11} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_12} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_13} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_14} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_15} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_16} alt="gov Logo"/></Link>
-              <Link href='#'><Image src={gov_17} alt="gov Logo"/></Link>
-              <Link href='https://www.skcc.co.kr/'><Image src={gov_18} alt="gov Logo"/></Link>
-              <Link href='https://www.innobiz.net/'><Image src={gov_19} alt="gov Logo"/></Link>
+              <Link href='https://www.mss.go.kr/'><Image src={gov_1} alt="gov Logo"/></Link>
+              <Link href='https://semas.or.kr/index_main.html'><Image src={gov_2} alt="gov Logo"/></Link>
+              <Link href='https://www.kosmes.or.kr/intro/kosme_intro.html'><Image src={gov_3} alt="gov Logo"/></Link>
+              <Link href='https://www.kbiz.or.kr/#'><Image src={gov_4} alt="gov Logo"/></Link>
+              <Link href='https://smartfactory.skku.edu/smartfactory/index.do'><Image src={gov_5} alt="gov Logo"/></Link>
+              <Link href='https://www.tipa.or.kr/'><Image src={gov_6} alt="gov Logo"/></Link>
+              <Link href='https://www.smtech.go.kr/'><Image src={gov_7} alt="gov Logo"/></Link>
+              <Link href='https://www.smart-factory.kr/'><Image src={gov_8} alt="gov Logo"/></Link>
+              <Link href='https://www.bizinfo.go.kr/'><Image src={gov_9} alt="gov Logo"/></Link>
+              <Link href='https://www.kmtca.or.kr/'><Image src={gov_10} alt="gov Logo"/></Link>
+              <Link href='https://www.ksa.or.kr/'><Image src={gov_11} alt="gov Logo"/></Link>
+              <Link href='https://www.kpc.or.kr/'><Image src={gov_12} alt="gov Logo"/></Link>
+              <Link href='https://www.korcham.net/'><Image src={gov_13} alt="gov Logo"/></Link>
+              <Link href='https://www.snip.or.kr/'><Image src={gov_14} alt="gov Logo"/></Link>
+              <Link href='https://www.skcc.co.kr/'><Image src={gov_15} alt="gov Logo"/></Link>
+              <Link href='https://www.innobiz.net/'><Image src={gov_16} alt="gov Logo"/></Link>
+              <Link href='https://www.smart-factory.kr/ciIntrcn'><Image src={gov_17} alt="gov Logo"/></Link>
+              <Link href='https://hiseoul.sba.kr/'><Image src={gov_18} alt="gov Logo"/></Link>
+              <Link href='http://www.korsca.kr/'><Image src={gov_19} alt="gov Logo"/></Link>
             </div>
           </section>
       </main>
