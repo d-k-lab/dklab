@@ -1,4 +1,3 @@
-import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -10,13 +9,15 @@ import smartFactory_m from '@/public/image/index/smartFactory_m.png'
 import smartFactory_banner from '@/public/image/index/banner.png'
 import Head from 'next/head'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
     <>
       <Head>
         <title>DKLAB - 디케이랩</title>
+        <meta property="og:image" content="../public/image/company/building.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:description" content="DKLAB 디케이랩" />
       </Head>
       <div className='index'>
         <Header />
@@ -38,7 +39,7 @@ export default function Home() {
               <p className='contact'>
                 문의<br />
                 070-4354-0782<br />
-                mjsk@dklab.kr
+                contact@dklab.kr
               </p>
             </div>
         </main>

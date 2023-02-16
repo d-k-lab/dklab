@@ -13,6 +13,11 @@ export default function SmartStudio() {
     <>
     <Head>
       <title>DKLAB - 구축실적</title>
+      <meta property="og:image" content="../../public/image/vendor/smart-s.png" />
+      <meta property="og:image" content="../../public/image/vendor/smart-s-map.png" />
+      <meta property="og:image:width" content="800" />
+      <meta property="og:image:height" content="600" />
+      <meta property="og:description" content="DKLAB 디케이랩 스마트공방 구축실적" />
     </Head>
     <div className='smartProduct'>
       <Header><h1>스마트공방</h1></Header>

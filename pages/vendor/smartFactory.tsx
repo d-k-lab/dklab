@@ -14,6 +14,11 @@ export default function SmartProduct() {
     <>
     <Head>
       <title>DKLAB - 구축실적</title>
+      <meta property="og:image" content="../../public/image/vendor/smart-p.png" />
+      <meta property="og:image" content="../../public/image/vendor/smart-p-map.png" />
+      <meta property="og:image:width" content="800" />
+      <meta property="og:image:height" content="600" />
+      <meta property="og:description" content="DKLAB 디케이랩 스마트공장 구축실적" />
     </Head>
     <div className='smartProduct'>
       <Header><h1>스마트공장</h1></Header>

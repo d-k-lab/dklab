@@ -21,6 +21,11 @@ export default function SolutionIfis() {
     <>
     <Head>
       <title>DKLAB - 솔루션</title>
+      <meta property="og:image" content="../public/image/solutionIfis/ifisViz.png" />
+      <meta property="og:image" content="../public/image/solutionIfis/solutionIfis-1.png" />
+      <meta property="og:image:width" content="800" />
+      <meta property="og:image:height" content="600" />
+      <meta property="og:description" content="DKLAB 디케이랩 솔루션 아이피스" />
     </Head>
     <div className="solutionIfis">
       <Header><h1>솔루션</h1></Header>
