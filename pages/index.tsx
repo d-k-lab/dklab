@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>DKLAB - 디케이랩</title>
-        <meta property="og:image" content="../public/image/company/building.png" />
+        <meta property="og:image" content="/image/company/building.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:description" content="DKLAB 디케이랩" />

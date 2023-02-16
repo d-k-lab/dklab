@@ -18,16 +18,16 @@ export default function Company() {
     <>
     <Head>
       <title>DKLAB - 회사소개</title>
-      <meta property="og:image" content="../public/image/logo/dklab-logo-black.svg" />
-      <meta property="og:image" content="../public/image/logo/dklab-logo-white.svg" />
+      <meta property="og:image" content="/image/logo/dklab-logo-black.svg" />
+      <meta property="og:image" content="/image/logo/dklab-logo-white.svg" />
       <meta property="og:image:width" content="800" />
       <meta property="og:image:height" content="600" />
       <meta property="og:description" content="DKLAB 디케이랩" />
-      <meta property="og:image" content="../public/image/company/business.png" />
+      <meta property="og:image" content="/image/company/business.png" />
       <meta property="og:description" content="DKLAB 디케이랩 사업영역" />
-      <meta property="og:image" content="../public/image/company/business-m.png" />
+      <meta property="og:image" content="/image/company/business-m.png" />
       <meta property="og:description" content="DKLAB 디케이랩 사업영역 스마트공장, 스마트공방" />
-      <meta property="og:image" content="../public/image/company/building.png" />
+      <meta property="og:image" content="/image/company/building.png" />
       <meta property="og:description" content="DKLAB 디케이랩 회사개요, 회사정보" />
     </Head>
     <div className='company'>
