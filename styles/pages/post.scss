@@ -1,0 +1,24 @@
+.post {
+  article {
+    display: grid; gap: 32px;
+    button {
+      display: flex; align-items: center; gap: 16px;
+      img {width: 16px; height: 16px;}
+    }
+    section {
+      border: 1px solid; padding: 24px; 
+      .post-title {
+
+      }
+      .copy {
+        display: flex; justify-content: space-between;
+        .tag {
+          display: flex; gap: 16px;
+        }
+      }
+    }
+    .md {
+
+    }
+  }
+}

@@ -3,6 +3,27 @@
   section {
     @include pageTitle;
     color:var(--color-1);
-
+  }
+  article {
+    display: grid; gap: 16px;
+    .card {
+      display: flex; border: 1px solid;
+      padding: 16px; border-radius: 10px;
+      .thumbnail {
+        figure {
+          figcaption {
+            img {width: 16px; height: 16px;}
+          }
+        }
+      }
+      .des {
+        color: var(--color-5);
+        .tag {display: flex; gap: 16px;}
+      }
+    }
+    .more {
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      img {width: 16px; height: 16px;}
+    }
   }
 }
