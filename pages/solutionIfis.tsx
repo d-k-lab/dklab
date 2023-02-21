@@ -32,10 +32,10 @@ export default function SolutionIfis() {
       <main>
           <section>
             <div>
-              <Image src={solutionIfis_1} alt="아이피스 미니"/>
+              <Image src={solutionIfis_1} alt="아이피스"/>
             </div>
             <div>
-              <p className="title">아이피스 미니 (IFIS MINI)</p>
+              <p className="title">아이피스 미니 (IFIS MINI), 아이피스 프로 (IFIS PRO)</p>
               <p className="discription">엑셀만 사용하는 기초수준 공장에서도 제조 공정을 시각적으로 표현하여 단기간에 적용 가능한 "제조공정 시각화 시스템" 입니다. 제조 공정에서 생산되는 제품의 수량, 생산 속도, 불량률 등을 시각적으로 표현하여  제조 공정의 상태를 실시간으로 파악하고, 공정의 성능을 향상시키는데 도움이 되는 솔루션 입니다.</p>
             </div>
           </section>
