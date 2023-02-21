@@ -49,7 +49,7 @@ export default function SmartFactory() {
       <Header><h1>스마트팩토리</h1></Header>
       <main>
           <section>
-            <p className='title'>2023년 <span>스마트공방</span> 기술보급 사업</p>
+            <p className='title'><span>스마트공방</span> 기술보급 사업</p>
           </section>
           <section>
             <p className='subtitle'><u>작업자의 행복을 위해</u> 스마트공방 구축 시 이점</p>
@@ -129,7 +129,7 @@ export default function SmartFactory() {
             <p className='subtitle'>구축실적 및 참고자료</p>
             <div className='contents'>
               <Link href='/vendor/smartStudio' className='smartFactory-btn dklab-smartFactory-btn'>디케이랩 스마트공방 구축 실적 보기</Link>
-              <Link href='#' className='smartFactory-btn'>2023년 스마트공방 기술보급 사업 모집 공고</Link>
+              <Link href='#' className='smartFactory-btn'>스마트공방 기술보급 사업 모집 공고</Link>
             </div>
           </section>
           <section>
