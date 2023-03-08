@@ -13,6 +13,9 @@ export default function SmartStudio() {
     <>
     <Head>
       <title>DKLAB - 구축실적</title>
+      <meta name="title" content="2023년 스마트공방 기술보급 사업 신청"></meta>
+      <meta name="description" content="2023년 스마트공방 기술보급 사업 신청, 아이피스, CM, ERP, MES, QMS, WMS, 공정 시각화, 스마트공방, 스마트공장, SaaS, 실시간 생산, 모니터링"></meta>
+      <meta property="og:site_name" content="디케이랩"></meta>
       <meta property="og:image" content="./image/vendor/smart-s.png" />
       <meta property="og:image" content="./image/vendor/smart-s-map.png" />
       <meta property="og:image:width" content="800" />
