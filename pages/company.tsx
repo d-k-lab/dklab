@@ -19,6 +19,9 @@ export default function Company() {
     <>
     <Head>
       <title>DKLAB - 회사소개</title>
+      <meta name="title" content="디케이랩 회사소개"></meta>
+      <meta name="description" content="아이피스, CM, ERP, MES, QMS, WMS, 공정 시각화, 스마트공방, 스마트공장, SaaS, 실시간 생산, 모니터링"></meta>
+      <meta property="og:site_name" content="디케이랩"></meta>
       <meta property="og:image" content="/image/logo/dklab-logo-black.svg" />
       <meta property="og:image" content="/image/logo/dklab-logo-white.svg" />
       <meta property="og:image:width" content="800" />

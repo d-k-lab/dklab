@@ -45,6 +45,9 @@ export default function SmartFactory() {
     <>
     <Head>
       <title>DKLAB - 스마트팩토리</title>
+      <meta name="title" content="2023년 스마트공방 기술보급 사업 모집 공고"></meta>
+      <meta name="description" content="2023년 스마트공방 기술보급 사업 모집 공고"></meta>
+      <meta property="og:site_name" content="디케이랩"></meta>
     </Head>
     <div className='smartFactory'>
       <Header><h1>스마트팩토리</h1></Header>

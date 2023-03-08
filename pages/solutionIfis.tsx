@@ -23,6 +23,9 @@ export default function SolutionIfis() {
     <>
     <Head>
       <title>DKLAB - 솔루션</title>
+      <meta name="title" content="디케이랩 솔루션"></meta>
+      <meta name="description" content="아이피스, CM, ERP, MES, QMS, WMS, 공정 시각화, 스마트공방, 스마트공장, SaaS, 실시간 생산, 모니터링"></meta>
+      <meta property="og:site_name" content="디케이랩"></meta>
       <meta property="og:image" content="/image/solutionIfis/ifisViz.png" />
       <meta property="og:image" content="/image/solutionIfis/solutionIfis-1.png" />
       <meta property="og:image:width" content="800" />
