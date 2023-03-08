@@ -6,7 +6,8 @@ import Header from "@/components/header";
 import logo from '@/public/image/logo/dklab-logo-white.svg';
 import business_w from '@/public/image/company/business.png';
 import business_m from '@/public/image/company/business-m.png';
-import ceo from '@/public/image/company/ceo.png';
+import business_all from '@/public/image/company/business-all.png';
+import history from '@/public/image/company/history.png';
 import patent from '@/public/image/company/patent.png';
 
 import company from '@/public/image/company/info.png';
@@ -47,13 +48,13 @@ export default function Company() {
           <div>
             <Image src={business_w} alt="사업영역" className='business-w'/>
             <Image src={business_m} alt="사업영역" className='business-m'/>
+            <Image src={business_all} alt="사업영역" />
           </div>
         </section>
         <section>
           <p className='subtitle'>회사개요</p>
           <div>
-            {/* <Image src={ceo} alt="CEO"/> */}
-            {/* <p>삼성전자 DS부문, 시스코시스템즈 코리아에서 21년 간 근무한 혁신전문가(CEO)가 우수한 개발팀을 구성하여 공정시각화 특허를 등록하였으며 아이피스미니를 출시하여 스마트공장 솔루션을 공급하기 위한 모든 준비를 마쳤습니다. 이론과 현장 실무를 모두 경험한 스마트공장 전문가로서 IoT 센서, CPS, 클라우드, 빅데이터 및 AI 연구개발을 통해 스마트공장 컨설팅과 자동화 설비 도입, 그리고 그것을 운영하는 최적의 솔루션 공급을 위해 최선을 다하겠습니다.</p> */}
+            <Image src={history} alt="회사 연혁"/>
           </div>
         </section>
         <section>
