@@ -1,6 +1,11 @@
 footer {
-  width: 100%; display: grid; place-items: center; color: var(--color-5);
+  width: 100%; display: grid; place-items: center; color: var(--color-5);gap:16px;
+  ul {
+    display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+    li {display: flex;gap: 16px; flex-wrap: wrap; justify-content: center;}
+  }
   @include desktop {font-size: var(--font-3); margin: 40px 0;}
-  @include tablet  {font-size: var(--font-3); margin: 40px 0;}
-  @include mobile  {font-size: var(--font-2); margin: 16px 0;}
+  @include tablet  {font-size: var(--font-3); margin: 40px 0;ul{font-size:var(--font-2); gap:8px;li{gap:8px;}}}
+  @include mobile  {font-size: var(--font-2); margin: 16px 0;ul{font-size:var(--font-1); gap:4px;li{gap:4px;}}}
+
 }
