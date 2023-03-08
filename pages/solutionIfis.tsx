@@ -13,6 +13,7 @@ import func_m from '@/public/image/solutionIfis/func-m.png';
 
 import flow_w from '@/public/image/solutionIfis/flow-w.png';
 import flow_m from '@/public/image/solutionIfis/flow-m.png';
+import flow_all from '@/public/image/solutionIfis/flow-all.png';
 import ifisViz from '@/public/image/solutionIfis/ifisViz.png';
 import Head from 'next/head';
 
@@ -55,6 +56,9 @@ export default function SolutionIfis() {
             <div>
               <Image src={flow_w} alt="공정흐름" className='flow-w'/>
               <Image src={flow_m} alt="공정흐름" className='flow-m'/>
+            </div>
+            <div>
+              <Image src={flow_all} alt="공정흐름" className='flow-w'/>
             </div>
           </section>
           <section>
