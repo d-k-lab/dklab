@@ -8,12 +8,13 @@ import { useRouter } from 'next/router';
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps, page_smartfactory:any) {
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url: any) => {
       gtag.pageview(url);
     };
+    gtag.event(page_smartfactory);
     router.events.on('routeChangeComplete', handleRouteChange);
     router.events.on('hashChangeComplete', handleRouteChange);
     return () => {
