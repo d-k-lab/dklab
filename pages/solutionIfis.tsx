@@ -13,6 +13,7 @@ import func_m from '@/public/image/solutionIfis/func-m.png';
 
 import flow_w from '@/public/image/solutionIfis/flow-w.png';
 import flow_m from '@/public/image/solutionIfis/flow-m.png';
+import flow_k from '@/public/image/solutionIfis/flow-k.png';
 import flow_all from '@/public/image/solutionIfis/flow-all.png';
 import ifisViz from '@/public/image/solutionIfis/ifisViz.png';
 import Head from 'next/head';
@@ -41,7 +42,7 @@ export default function SolutionIfis() {
             </div>
           </section>
           <section>
-            <p className="subtitle">기능</p>
+            <p className="subtitle">핵심 기능</p>
             <div>
               <Image src={func_1} alt="아이피스 기능" className='func-w'/>
               <Image src={func_2} alt="아이피스 기능" className='func-w'/>
@@ -54,24 +55,28 @@ export default function SolutionIfis() {
           <section>
             <p className="subtitle">공정흐름</p>
             <div>
-              <Image src={flow_w} alt="공정흐름" className='flow-w'/>
+              {/* <Image src={flow_w} alt="공정흐름" className='flow-w'/> */}
               <Image src={flow_m} alt="공정흐름" className='flow-m'/>
+              <Image src={flow_k} alt="공정흐름" className='flow-w'/>
             </div>
+          </section>
+          <section>
+            <p className="subtitle flow-w">시스템 구성도</p>
             <div>
               <Image src={flow_all} alt="공정흐름" className='flow-w'/>
             </div>
           </section>
-          <section>
+          <section className='ifis-viz'>
             <p className="subtitle">제조공정 시각화 화면 예시 (당사 특허 보유)</p>
             <div>
-              <ul>
-                <li>특장점</li>
-                <li>1. 사용이 쉽고, 간편하고 직관적, 공장시각화 특허 보유</li>
-                <li>2. 대외적으로 인정받은 사례 (창원지원, 후속지원 등)</li>
-                <li>3. 성균관대학교 스마트 팩토리 융합학과 창업</li>
-                <li>4. 삼성 및 시스코 경력의 혁신 및 설계 전문 역량 보유</li>
-              </ul>
               <Image src={ifisViz} alt="제조공정 시각화"/>
+              <ul>
+                {/* <li>특장점</li> */}
+                <li>스마트공장을 처음 도입하는 기업에 딱 맞는 <br/><span>쉽고 간편한 MES 솔루션</span></li>
+                <li>제조 어플리케이션의 <span>공통 편의기능 통합</span> <br/>(SCM + ERP + MES + QMS + WMS)</li>
+                <li><span>공정 시각화 특허</span> 적용, <br/>실시간 생산 진척 현황 모니터링 (직관성 극대화)</li>
+                <li><span>SaaS 완성형</span> 패키지 (추가개발 불필요)</li>
+              </ul>
             </div>
           </section>
       </main>
