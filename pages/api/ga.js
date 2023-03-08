@@ -1,7 +1,7 @@
 export const GA_TRACKING_ID = 'G-MSCZF1532T';
 
 export const pageview = (view) => {
-  window.gtag('config', GA_TRACKING_ID, { page_path: url});
+  window.gtag('config', GA_TRACKING_ID, { page_path: url });
 }
 
 export const event = ({ action, category, label, value }) => {

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import Image from 'next/image';
 
@@ -37,7 +38,7 @@ import gov_16 from '@/public/image/smartFactory/gov-16.png';
 import gov_17 from '@/public/image/smartFactory/gov-17.png';
 import gov_18 from '@/public/image/smartFactory/gov-18.png';
 import gov_19 from '@/public/image/smartFactory/gov-19.png';
-import Head from "next/head";
+
 
 export default function SmartFactory() {
   return (
