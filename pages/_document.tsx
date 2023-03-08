@@ -15,6 +15,7 @@ export default function Document() {
         <meta property="og:description" content="스마트공방, 스마트공장을 위한 제조공정 시각화 MES 솔루션 공급기업" />
         <meta property="og:url" content="http://dklab.kr" />
         <meta property="og:image" content="/image/index/logo_og_image_1200x630.png" />
+        <meta name="naver-site-verification" content="22931517d18b1f424d4adde7209b43c8114c5469" />
       </Head>
       <body>
         <Main />
