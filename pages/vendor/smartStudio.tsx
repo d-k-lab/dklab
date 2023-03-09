@@ -44,13 +44,14 @@ export default function SmartStudio() {
 
   const submitForm = async (e:any) => {
     e.preventDefault();
-    const res = await fetch('http://dklab.kr/api/notionForm', {
+    const res = await fetch('http://main.dklab.kr/api/notionForm', {
       method: 'POST',
       body: JSON.stringify({ name, phone, email, company, employ, category  }),
     });
     // Success if status code is 201
     if (res.status === 201) {
       console.log('상담 신청 완료!', { type: 'success' });
+      alert('상담 신청 접수 되었습니다.');
     } else {
       console.log('폼 에러', { type: 'error' });
     }
