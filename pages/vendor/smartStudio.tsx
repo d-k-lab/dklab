@@ -87,7 +87,7 @@ export default function SmartStudio() {
           <div className='performance'>
             <div>
               <Image src={vendor_s} alt="스마트공방 실적"/>
-              <button onClick={smartForm}>스마트 공방 신청하기</button>
+              {/* <button onClick={smartForm}>스마트 공방 신청하기</button> */}
             </div>
             <Image src={vendor_s_map} alt="스마트공방 실적"/>
           </div>
