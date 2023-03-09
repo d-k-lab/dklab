@@ -44,7 +44,7 @@ export default function SmartStudio() {
 
   const submitForm = async (e:any) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:3000/api/notionForm', {
+    const res = await fetch('http://main.dklab.kr/api/notionForm', {
       method: 'POST',
       body: JSON.stringify({ name, phone, email, company, employ, category  }),
     });
