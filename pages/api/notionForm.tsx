@@ -74,6 +74,7 @@ export default async function handler(req:any, res:any) {
         },
       },
     });
+    res.redirect(302, '/api/notionForm')
     res.status(201).json({ msg: 'Success' });
   } catch (error) {
     res.status(500).json({ msg: 'There was an error' });
