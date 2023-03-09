@@ -4,17 +4,71 @@
 	@include mobile {gap: 10px;}
 	section {
 		@include pageTitle;
-		&:nth-of-type(2){
-			div{display:flex;gap:10%;
-				img{width:100%;height:100%;
-					&:nth-of-type(1){padding-top:60px;}
+		.performance {
+			display: flex;gap:60px; align-items: center;
+			div{
+				display:flex;gap:10%;
+				&:nth-of-type(1){
+					// padding-top:60px;
+					display: grid;
+					width: 100%;
+					padding: 0;
+					height: fit-content;
+					img{width:100%;height:100%;}
+					button{
+						background: var(--color-6);
+						height: 70px;
+						border-radius: 12px;
+						color: var(--color-1);
+						box-shadow: 0px 6px 6px 6px #eee;
+						&:hover {opacity: .9;}
+					}
 				}
 			}
+			img{width:100%;height:100%;}
 		}
 		.title{font-size:var(--font-4);color:var(--color-1);}
 		.discription{font-size:var(--font-3);color:var(--color-1);max-width: 780px;font-weight: 400;margin-top:8px;}
     .subtitle {font-size: var(--font-6); color: var(--color-7); font-weight: bold; margin: 30px 0;}
-
+		&:nth-of-type(3){display: flex;justify-content: center;}
+		form {
+			width: 980px;
+			display: grid; align-items: center; justify-content: center; gap:24px;
+			border: 1px solid #ddd; border-radius: 10px;
+			padding: 40px 0;
+			display: grid; gap:16px;
+			font-size: 1rem;
+			line-height: 150%;
+			p {
+				width: 100%;
+				text-align: center;
+				font-size: 1.5rem;
+				margin-bottom: 20px;
+			}
+			label {
+				display: flex; gap:8px;
+				justify-content: space-between;
+				input {
+					border-radius: 4px;
+					border: 1px solid #ccc;
+					padding: 4px 16px;
+				}
+			}
+			hr{border:1px dashed #ddd;margin:16px 0;}
+			.agree {
+				display: grid; justify-content: center; margin: 16px 0;
+				label {display: flex; justify-content: center;}
+				button {width: 100%; background: var(--color-6); color:var(--color-1); height: 40px; border-radius: 8px; margin-top: 16px;}
+				input{width:24px;}
+				span {
+					width: 100%; text-align: center;
+						&::before {
+						content: '개인정보는 스마트공방 지원사업 신청 목적 외에 사용되지 않습니다.';
+						color: #888;font-size: .875rem;
+					}
+				}
+			}
+		}
 		/* PC ------------------------------------------ */
 		@include desktop {
 			&:nth-of-type(2){div{padding:0 140px;padding-left: 16%;}}
