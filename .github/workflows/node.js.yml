@@ -69,6 +69,7 @@ jobs:
         env:
           DATABASE_ID: ${{ secrets.DATABASE_ID }}
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NEXT_PUBLIC_DEPLOY_PATH: ${{ secrets.NEXT_PUBLIC_DEPLOY_PATH }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
