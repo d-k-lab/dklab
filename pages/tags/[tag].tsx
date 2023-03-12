@@ -4,7 +4,7 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 
 import { PageMetadata } from '@/types/type';
-import { getAllPublished, getSingleBlogPostBySlug } from "../api/notion";
+import { getAllPublished, getSingleBlogPostBySlug } from "../api/notionBlog";
 
 export default function Tag({posts, tag}: any) {
   console.log(posts)
@@ -14,56 +14,58 @@ export default function Tag({posts, tag}: any) {
       <Head>
         <title>DKLAB BLOG</title>
       </Head>
-      <Header />
-      <main>
-        <article>
-          <p className='article-title'>{tag.toUpperCase()}</p>
-          {posts.map((post: any, index: any) => (
-            <div className='card' key={index}>
-              <div className='thumbnail'>
-                <a href='#' target='_blank'>
-                <figure>
-                  <img
-                    src="https://blog-meta-og-image.vercel.app/_next/image?url=%2Fflavien.webp&w=640&q=75"
-                    alt="thumbnail"
-                    width={100}
-                    height={100}
-                    />
-                  <figcaption>
-                    <p>100</p>
-                    <img src="https://cdn-icons-png.flaticon.com/512/7794/7794669.png" alt="icon" />
-                  </figcaption>
-                </figure>
-                </a>
-              </div>
-              <div className='des'>
-                <Link href={`/post/${post.slug}`}>
-                  <div>
-                    <p className='title'>Title : {post.title}</p>
-                    <p>10</p>
+      <div className="blog">
+        <Header />
+          <main className='post'>
+            <article>
+              <p className='article-title'> 선택한 태그 : {tag.toUpperCase()}</p>
+              {posts.map((post: any, index: any) => (
+                <div className='card' key={index}>
+                  <div className='thumbnail'>
+                    <a href='#' target='_blank'>
+                    <figure>
+                      <img
+                        src="https://blog-meta-og-image.vercel.app/_next/image?url=%2Fflavien.webp&w=640&q=75"
+                        alt="thumbnail"
+                        width={100}
+                        height={100}
+                      />
+                      <figcaption>
+                        <p>100</p>
+                        <img src="https://cdn-icons-png.flaticon.com/512/7794/7794669.png" alt="icon" />
+                      </figcaption>
+                    </figure>
+                    </a>
                   </div>
-                  <div><p className='subtitle'>Description :{post.description}</p></div>
-                  <div>
-                    <p>ArticleUrl : {post.articleUrl}</p>
-                    <p>NotionURL : {post.notionUrl}</p>
-                    <p>created : {post.createdDate}</p>
-                    <p>updated : {post.updatedDate}</p>
+                  <div className='des'>
+                    <Link href={`/post/${post.slug}`}>
+                      <div>
+                        <p className='title'>Title : {post.title}</p>
+                        <p>10</p>
+                      </div>
+                      <div><p className='subtitle'>Description :{post.description}</p></div>
+                      <div>
+                        <p>ArticleUrl : {post.articleUrl}</p>
+                        <p>NotionURL : {post.notionUrl}</p>
+                        <p>created : {post.createdDate}</p>
+                        <p>updated : {post.updatedDate}</p>
+                      </div>
+                    </Link>
+                    <div className='tag'>
+                      <p>Tag :</p>
+                      {post.tags.map((tag: any)=> {
+                        return (
+                          <Link key={post.id + "/" + tag} href={`/tags/${tag}`}># {tag}</Link>                           
+                        )
+                      })}
+                    </div>
                   </div>
-                </Link>
-                <div className='tag'>
-                  <p>Tag :</p>
-                  {post.tags.map((tag: any)=> {
-                    return (
-                      <Link key={post.id + "/" + tag} href={`/tags/${tag}`}># {tag}</Link>                           
-                    )
-                  })}
                 </div>
-              </div>
-            </div>
-          ))}
-        </article>
-      </main>
-      <Footer />
+              ))}
+            </article>
+          </main>
+        <Footer />
+      </div>
     </>
   )
 }

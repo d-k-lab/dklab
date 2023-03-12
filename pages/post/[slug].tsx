@@ -5,7 +5,7 @@ import Header from "@/components/header";
 import Tooltip from '@mui/material/Tooltip';
 
 import { PageMetadata } from '@/types/type';
-import { getAllPublished, getSingleBlogPostBySlug } from "../api/notion";
+import { getAllPublished, getSingleBlogPostBySlug } from "../api/notionBlog";
 
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -91,9 +91,9 @@ export default function Post({ markdown,  metadata }: { markdown: string, metada
                   <CodeBlock
                     codestring={String(children).replace(/\n$/, '')}
                     language={match[1]}
-                    />
+                  />
                 ) : (
-                    <code className={className} {...props}>
+                  <code className={className} {...props}>
                     {children}
                   </code>
                 )
