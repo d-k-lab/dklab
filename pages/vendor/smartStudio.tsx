@@ -13,13 +13,15 @@ import { useState } from 'react';
 export default function SmartStudio() {
   const [form, setForm] = useState(false);
   const [agree, setAgree] = useState(true);
+
   const [company, setCompany] = useState('');
   const [category, setCategory] = useState('');
   const [employ, setEmploy] = useState('');
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
-  const [check, setCheck] = useState('');
+  const [agreeDate, setagreeDate] = useState(new Date());
+  
   // 신청하기 버튼 클릭
   const smartForm = () => {
     setForm(true);
@@ -28,6 +30,7 @@ export default function SmartStudio() {
   // 동의하기 버튼 클릭
   const agreeBtn = (e:any) => {
     setAgree((prev) => !prev);
+    setagreeDate(new Date());
   }
   // 인풋 텍스트
   const handleCompany = (e:any) => {setCompany(e.target.value);}
@@ -36,22 +39,30 @@ export default function SmartStudio() {
   const handleName = (e:any) => setName(e.target.value);
   const handlePhone = (e:any) => {setPhone(e.target.value);}
   const handleEmail = (e:any) => {setEmail(e.target.value);}
-  // const handleCheck = (e:any) => {setCheck(e.target.value);}
-  // const handleSubmit = (e:any) => {
-  //   e.preventDefault();
-  //   console.log(`${agree}`);
-  // }
 
   const submitForm = async (e:any) => {
     e.preventDefault();
-    const res = await fetch('http://main.dklab.kr/api/notionForm', {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_DEPLOY_PATH}`, {
       method: 'POST',
-      body: JSON.stringify({ name, phone, email, company, employ, category  }),
+      body: JSON.stringify({
+        company,
+        category,
+        employ,
+        name,
+        phone,
+        email,
+        agreeDate: agreeDate.getTime()
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
     });
+    console.log(res)
+    // console.log(`${process.env.DEPLOY_PATH}`)
     // Success if status code is 201
     if (res.status === 201) {
       console.log('상담 신청 완료!', { type: 'success' });
-      alert('상담 신청 접수 되었습니다.');
+      // alert('상담 신청 접수 되었습니다.');
     } else {
       console.log('폼 에러', { type: 'error' });
     }
@@ -87,7 +98,7 @@ export default function SmartStudio() {
           <div className='performance'>
             <div>
               <Image src={vendor_s} alt="스마트공방 실적"/>
-              {/* <button onClick={smartForm}>스마트 공방 신청하기</button> */}
+              <button onClick={smartForm}>스마트 공방 신청하기</button>
             </div>
             <Image src={vendor_s_map} alt="스마트공방 실적"/>
           </div>
@@ -108,7 +119,7 @@ export default function SmartStudio() {
                 <div className='agree'>
                   <label htmlFor='agree'>
                     <input
-                      type='checkbox' name='agree' value='agree'
+                      type='checkbox' name='agree' value={agreeDate.toString()}
                       onClick={agreeBtn}
                       />
                     개인정보 동의합니다.
