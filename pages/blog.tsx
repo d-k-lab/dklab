@@ -4,7 +4,7 @@ import Section from "@/components/section";
 import Head from "next/head";
 import Link from "next/link";
 
-import { getAllPublished } from './api/notion';
+import { getAllPublished } from './api/notionBlog';
 
 export default function Blog({ posts }: any) {
   return (

@@ -1,3 +1,4 @@
+// 노션 블로그 API
 import { PageMetadata } from '@/types/type';
 const { Client } = require("@notionhq/client")
 
