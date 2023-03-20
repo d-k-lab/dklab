@@ -18,12 +18,12 @@
 		}}
 		/* PC ------------------------------------------ */
 		&:nth-of-type(4){display: flex; justify-content: center;
-			div{display: flex;justify-content: center;width: 100%;gap: 80px;
+			div{display: flex;justify-content: center;width: 100%;gap: 20px; align-items: center;
 				ul{
-					display: grid; gap:16px; align-items: center; justify-content:space-between;
-					background: var(--color-2); padding: 40px 60px; border-radius: 10px; font-size: var(--font-4);
+					display: grid; gap:4px; align-items: center; justify-content:space-between;
+					background: var(--color-2); padding: 40px 80px; border-radius: 10px; font-size: var(--font-2);
 				}
-			img{padding:40px; padding:40px;}
+			img{padding:40px; max-height: 250px;}
 			}
 		}
 		&:nth-of-type(5){div{display: flex;gap:20px;width:100%;justify-content: center;
