@@ -85,7 +85,7 @@ export default function SmartFactory() {
             </div>
           </section> */}
           <section>
-            <p className='subtitle'>기업의 <u>디지털 트랜스포메이션을 위한</u> 스마트팩토리 구축</p>
+            <p className='subtitle'>기업의 디지털 트랜스포메이션을 위한 스마트팩토리 구축</p>
             <div className='contents step'>
               <ul>
                 <li>
@@ -122,7 +122,7 @@ export default function SmartFactory() {
             </div>
           </section>
           <section>
-            <p className='subtitle'><u>스마트공방</u> 지원 기간 및 절차</p>
+            <p className='subtitle'>스마트공방 지원 기간 및 절차</p>
             <div className='contents timeline'>
               <Image src={smartFactory_2_1} className='timeline-w' alt="지원 기간 및 절차"/>
               <Image src={smartFactory_2_1_1} className='timeline-m' alt="지원 기간 및 절차"/>
