@@ -56,7 +56,7 @@ export default function SmartFactory() {
             <p className='title'><span>스마트공방</span> 기술보급 사업</p>
           </section>
           <section>
-            <p className='subtitle'><u>작업자의 행복을 위해</u> 스마트공방 구축 시 이점</p>
+            <p className='subtitle'>모두의 행복을 위한 스마트팩토리</p>
             <div className='contents'>
               <ul>
                 <li>
@@ -77,15 +77,15 @@ export default function SmartFactory() {
               </ul>
             </div>
           </section>
-          <section>
-            <p className='subtitle'><u>스마트공방</u> 정부지원사업 공고 내용</p>
+          {/* <section>
+            <p className='subtitle'>스마트공방 정부지원사업 공고 내용</p>
             <div className='contents business'>
               <Image src={smartFactory_1_1} alt="스마트공방 정부지원사업 공고 내용"/>
               <Image src={smartFactory_1_2} alt="스마트공방 정부지원사업 공고 내용"/>
             </div>
-          </section>
+          </section> */}
           <section>
-            <p className='subtitle'>기업의 <u>스마트 팩토리를 위해</u> 한걸음 다가가는 방법</p>
+            <p className='subtitle'>기업의 <u>디지털 트랜스포메이션을 위한</u> 스마트팩토리 구축</p>
             <div className='contents step'>
               <ul>
                 <li>
