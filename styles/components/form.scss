@@ -1,0 +1,93 @@
+.btn-form {
+  height: 70px;
+  width: 100%;
+  display: flex; justify-content: center; align-items: center;
+  margin: 24px 0;
+  button {
+    font-size: var(--font-4);
+    padding: 24px 30%;
+    color: var(--color-1);
+    border-radius: 12px;
+    background: linear-gradient(to right, var(--color-6), #0c3079);
+    box-shadow: 0px 6px 6px 6px #eee;
+    &:hover {opacity: .9;}
+  }
+  @include mobile {
+    button {
+      padding: 24px 10%;
+    }
+  }
+}
+
+form {
+  // width: 980px;
+  display: grid; align-items: center; justify-content: center; gap:16px; position: relative;
+  border: 1px solid #ddd; border-radius: 10px;
+  padding: 40px 20px;
+  font-size: var(--font-3);
+  line-height: 150%;
+  p {
+    color: #888;
+    &:nth-of-type(1) {
+      color: #000;
+      width: 100%;
+      text-align: center;
+      font-size: var(--font-6);
+      margin-bottom: 8px;
+    }
+    margin-bottom: 20px;
+  }
+  label {
+    display: flex; gap:8px;
+    justify-content: space-between;
+    input {
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      padding: 4px 16px;
+    }
+  }
+  hr{border:1px dashed #ddd;margin:16px 0;}
+  .agree {
+    display: grid; justify-content: center; margin: 16px 0;
+    label {display: flex; justify-content: center;}
+    button {width: 100%; background: var(--color-6); color:var(--color-1); height: 40px; border-radius: 8px; margin-top: 16px;}
+    input{width:24px;}
+    span {
+      width: 100%; text-align: center;
+        &::before {
+        content: '개인정보는 스마트공방 지원사업 신청 목적 외에 사용되지 않습니다.';
+        color: #888;font-size: var(--font-2);
+      }
+    }
+  }
+  .modal {
+    display: grid; justify-content: center; align-items: center;
+    position: absolute;
+    width: 100%;
+    div {
+      padding: 40px;
+      border: 1px solid;
+      display: grid; justify-content: center; align-items: center;
+      border-radius: 8px;
+      gap: 8px;
+      background: #fff;
+      box-shadow: 4px 4px 10px #ddd;
+    }
+    button {
+      background: #eee;
+      border-radius: 8px;
+      padding: 4px 16px;
+    }
+  }
+  /* Mobile --------------------------------------- */
+  @include mobile {
+    p {
+      &:nth-of-type(1) {font-size: var(--font-4);}
+    }
+    label {
+      input {
+        max-width: 50%;
+      }
+    }
+  }
+}

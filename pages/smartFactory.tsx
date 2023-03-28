@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Form from "@/components/form";
 
 import dklab_samrtFactory_1 from '@/public/image/smartFactory/dklab_samrtFactory_1.png';
 import dklab_samrtFactory_2 from '@/public/image/smartFactory/dklab_samrtFactory_2.png';
@@ -39,7 +40,6 @@ import gov_17 from '@/public/image/smartFactory/gov-17.png';
 import gov_18 from '@/public/image/smartFactory/gov-18.png';
 import gov_19 from '@/public/image/smartFactory/gov-19.png';
 
-
 export default function SmartFactory() {
   return (
     <>
@@ -53,7 +53,7 @@ export default function SmartFactory() {
       <Header><h1>스마트팩토리</h1></Header>
       <main>
           <section>
-            <p className='title'><span>스마트공방</span> 기술보급 사업</p>
+            <p className='title'><span>스마트공방</span> 기술보급사업</p>
           </section>
           <section>
             <p className='subtitle'>모두의 행복을 위한 스마트팩토리</p>
@@ -77,13 +77,14 @@ export default function SmartFactory() {
               </ul>
             </div>
           </section>
-          {/* <section>
+          <section>
             <p className='subtitle'>스마트공방 정부지원사업 공고 내용</p>
             <div className='contents business'>
               <Image src={smartFactory_1_1} alt="스마트공방 정부지원사업 공고 내용"/>
               <Image src={smartFactory_1_2} alt="스마트공방 정부지원사업 공고 내용"/>
             </div>
-          </section> */}
+            <Form />
+          </section>
           <section>
             <p className='subtitle'>기업의 디지털 트랜스포메이션을 위한 스마트팩토리 구축</p>
             <div className='contents step'>
