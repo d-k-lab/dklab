@@ -40,7 +40,7 @@ export default function SmartStudio() {
           <div className='performance'>
             <div>
               <Image src={vendor_s} alt="스마트공방 실적"/>
-          <Form />
+              <Form />
             </div>
             <Image src={vendor_s_map} alt="스마트공방 실적"/>
           </div>

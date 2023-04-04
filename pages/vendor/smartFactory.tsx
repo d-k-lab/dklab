@@ -8,6 +8,7 @@ import vendor_p from '@/public/image/vendor/smart-p.png';
 import vendor_p_map from '@/public/image/vendor/smart-p-map.png';
 import vendor_p_icon from '@/public/image/vendor/smart-p-icon.png';
 import Head from "next/head";
+import Form from "@/components/form";
 
 export default function SmartProduct() {
   return (
@@ -37,12 +38,14 @@ export default function SmartProduct() {
         </section>
         <section>
           <p className='subtitle'>스마트 공장</p>
-          <div>
-            <Image src={vendor_p} alt="스마트공장 실적"/>
+          <div className='performance'>
+            <div>
+              <Image src={vendor_p} alt="스마트공장 실적"/>
+              <Form />
+            </div>
             <Image src={vendor_p_map} alt="스마트공장 실적"/>
           </div>
         </section>
-        <section></section>
       </main>
       <Footer />
     </div>
