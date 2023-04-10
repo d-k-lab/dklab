@@ -43,7 +43,7 @@ export default function Company() {
           </div>
           <div>
             <p className='title'>디케이랩</p>
-            <p className='discription'>‘스마트 공장’은 산업 4.0 기술을 적용한 공장을 의미합니다. 이를 위해 인공지능, 빅데이터, 사물인터넷 등의 기술을 사용하여 생산 공정을 자동화하고 데이터를 분석하여 생산 효율을 높이는 방식으로 운영됩니다.</p>
+            <p className='discription'>DKLab은 스마트 공방/공장 진단 및 구축 컨설팅, 제조 솔루션 개발 및 공급, 프로세스 분석 및 개선, 연구개발을 통해 최적의 솔루션을 공급하는 기업입니다.</p>
           </div>
         </section>
         <section>
