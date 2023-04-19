@@ -55,12 +55,15 @@ export default function SolutionIfis() {
               <Image src={func_5} alt="아이피스 기능" className='func-w'/>
               <Image src={func_m} alt="아이피스 기능" className='func-m'/>
             </div>
+          </section>
+          <section>
+            <p className="subtitle">기능 구성</p>
             <div>
               <Image src={func_ifispro} alt="아이피스 프로 기능 이미지" className='func-w'/>
             </div>
           </section>
           <section>
-            <p className="subtitle">공정흐름</p>
+            <p className="subtitle">공정 흐름</p>
             <div>
               {/* <Image src={flow_w} alt="공정흐름" className='flow-w'/> */}
               <Image src={flow_m} alt="공정흐름" className='flow-m'/>
