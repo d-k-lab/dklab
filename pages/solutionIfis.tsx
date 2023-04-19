@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 import solutionIfis_1 from '@/public/image/solutionIfis/solutionIfis-1.png';
+import func_ifispro from '@/public/image/solutionIfis/func-ifispro.png';
 import func_1 from '@/public/image/solutionIfis/func-1.png';
 import func_2 from '@/public/image/solutionIfis/func-2.png';
 import func_3 from '@/public/image/solutionIfis/func-3.png';
@@ -53,6 +54,9 @@ export default function SolutionIfis() {
               <Image src={func_4} alt="아이피스 기능" className='func-w'/>
               <Image src={func_5} alt="아이피스 기능" className='func-w'/>
               <Image src={func_m} alt="아이피스 기능" className='func-m'/>
+            </div>
+            <div>
+              <Image src={func_ifispro} alt="아이피스 프로 기능 이미지" className='func-w'/>
             </div>
           </section>
           <section>
