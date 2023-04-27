@@ -134,7 +134,9 @@ export default function SmartFactory() {
             <p className='subtitle'>구축실적 및 참고자료</p>
             <div className='contents'>
               <Link href='/vendor/smartStudio' className='smartFactory-btn dklab-smartFactory-btn'>디케이랩 스마트공방 구축 실적 보기</Link>
-              <Link href='#' className='smartFactory-btn'>스마트공방 기술보급 사업 모집 공고</Link>
+              <a href='https://www.gosims.go.kr/hg/hg002/retrieveTaskReqst.do?nttId=202333000000004800028A&menuId=USRM_10309&pageDiv=Search&query=%EC%8A%A4%EB%A7%88%ED%8A%B8%EA%B3%B5%EB%B0%A9&startCount=0&sort=RANK&collection=ALL&range=A&startDate=1970.01.01&endDate=2023.04.28&reQuery=&realQuery=%EC%8A%A4%EB%A7%88%ED%8A%B8%EA%B3%B5%EB%B0%A9&pssrp_sort=RANK&bsns_sort=BSNS_SE/ASC,RANK&faq_sort=RANK&menual_sort=RANK&etc_sort=RANK&tarAll=&tarTitle=&tarContents=&registDdCnFo=1970.01.01&registDdCnTo=2023.04.28&pssrpBegin=&pssrpEnd=&pssrpInsttCd=&pssrpTerm=&backBtnText=%EC%9D%B4%EC%A0%84%EC%9C%BC%EB%A1%9C&backBtnFnc=f_go_seachWise' className='smartFactory-btn' target='_blank'>
+                스마트공방 기술보급 사업 모집 공고
+              </a>
             </div>
           </section>
           <section>
