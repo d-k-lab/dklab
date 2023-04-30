@@ -1,0 +1,37 @@
+.smart2023 {
+  @include header;
+  /* 공통 (PC 기준) ------------------------------------------ */
+  section {
+    width: 100%;
+    @include pageTitle;
+    &:nth-of-type(1) {.title {
+      color: var(--color-1);
+      font-size: var(--font-8);
+      }
+    }
+    .public {
+      display: grid; gap: 24px;
+      .left {margin-left: 24px;}
+      p {
+        font-size: var(--font-5);
+        b {font-weight: bold;}
+      }
+    }
+  }
+  /* Mobile --------------------------------------- */
+  @include mobile {
+    section {
+      &:nth-of-type(1) {.title {
+        color: var(--color-1);
+        font-size: var(--font-3);
+        }
+      }
+      .public {
+        p {
+          font-size: var(--font-4);
+          b {font-weight: bold;}
+        }
+      }
+    }
+  }
+}

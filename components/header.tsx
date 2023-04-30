@@ -18,10 +18,11 @@ export default function Header({children}:any) {
     {id: '1', ko: '스마트팩토리', en: 'smartFactory', path: '/smartFactory'},
     {id: '2', ko: '솔루션', en: 'solutionIfis', path: '/solutionIfis'},
     {id: '3', ko: '구축실적', en: 'smartFactory', path: '/vendor/smartStudio',
-    snb1: '스마트 공방', snb1path: '/vendor/smartStudio',
-    snb2: '스마트 공장', snb2path: '/vendor/smartFactory',
+      snb1: '스마트 공방', snb1path: '/vendor/smartStudio',
+      snb2: '스마트 공장', snb2path: '/vendor/smartFactory',
     },
     {id: '4', ko: '회사소개', en: 'company', path: '/company'},
+    {id: '5', ko: '2023 스마트공방 신청접수', en: 'smart2023', path: '/smart2023'},
     // {id: '5', ko: '블로그', en: 'blog', path: '/blog'},
   ]
   const router = useRouter();
