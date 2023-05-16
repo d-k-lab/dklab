@@ -22,7 +22,7 @@ export default function Header({children}:any) {
       snb2: '스마트 공장', snb2path: '/vendor/smartFactory',
     },
     {id: '4', ko: '회사소개', en: 'company', path: '/company'},
-    {id: '5', ko: '2023 스마트공방 신청접수', en: 'smart2023', path: '/smart2023'},
+    // {id: '5', ko: '2023 스마트공방 신청접수', en: 'smart2023', path: '/smart2023'},
     // {id: '5', ko: '블로그', en: 'blog', path: '/blog'},
   ]
   const router = useRouter();

@@ -83,7 +83,7 @@ export default function SmartFactory() {
               <Image src={smartFactory_1_1} alt="스마트공방 정부지원사업 공고 내용"/>
               <Image src={smartFactory_1_2} alt="스마트공방 정부지원사업 공고 내용"/>
             </div>
-            <Form />
+            {/* <Form /> */}
           </section>
           <section>
             <p className='subtitle'>기업의 디지털 트랜스포메이션을 위한 스마트팩토리 구축</p>
