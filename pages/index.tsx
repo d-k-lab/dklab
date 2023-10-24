@@ -40,7 +40,7 @@ export default function Home() {
             <Image src={smartFactory_w} alt="스마트팩토리 이미지"/>
             <Image src={smartFactory_banner} alt="banner" className='banner'/>
             <p className='contact'>
-              문의<br />
+              문의 연락처<br />
               070-4354-0782<br />
               mjsk@dklab.kr
             </p>
