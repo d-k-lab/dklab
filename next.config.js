@@ -4,9 +4,10 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/main.dklab.kr/:path',
+        source: '/',
         destination: 'https://dklab.kr/',
         permanent: true, // 브라우저나 검색엔진이 이 정보를 기억하는지 결정
+        statusCode: 301,
       }
     ]
   }
